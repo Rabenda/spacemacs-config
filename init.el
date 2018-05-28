@@ -300,7 +300,7 @@ values."
       '(("melpa-cn" . "https://elpa.emacs-china.org/melpa/")
         ("org-cn"   . "https://elpa.emacs-china.org/org/")
         ("gnu-cn"   . "https://elpa.emacs-china.org/gnu/")))
-  "Initialization function for user code.
+   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
  This function is mostly useful for variables that need to be set
