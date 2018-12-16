@@ -5,6 +5,7 @@
 
 ```bash
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+cd ~/.emacs.d/ && git checkout develop && git pull && cd -
 git clone https://github.com/Rabenda/spacemacs-config ~/.spacemacs.d
 ```
 ## Ensime Install
@@ -21,3 +22,8 @@ addSbtPlugin("org.ensime" % "sbt-ensime" % "2.5.1")
 ```
 
 Then in order to create the .ensime file for your project, start sbt (in the terminal or your editor’s sbt mode) and run the ensimeConfig command.
+
+
+## Add major mode
+
+Scala java c-c++
