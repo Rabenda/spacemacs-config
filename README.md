@@ -23,8 +23,8 @@ addSbtPlugin("org.ensime" % "sbt-ensime" % "2.5.1")
 
 Then in order to create the .ensime file for your project, start sbt (in the terminal or your editor’s sbt mode) and run the ensimeConfig command.
 
-## C++ ccls
-[ccls install](https://github.com/MaskRay/ccls/wiki/Getting-started)
+## C++ cquery
+[cquery emacs](https://github.com/cquery-project/cquery/wiki/Emacs)
 
 ## Add major mode
 

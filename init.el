@@ -39,10 +39,12 @@ values."
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode
             ;;c-c++-enable-clang-support t
-            c-c++-backend 'lsp-ccls
+            c-c++-backend 'lsp-cquery
             c-c++-lsp-sem-highlight-rainbow t
             c-c++-enable-clang-format-on-save t
             c-c++-enable-auto-newline t
+            ;;company-transformers nil
+
             )
      semantic
      helm
@@ -80,7 +82,7 @@ values."
      lsp-mode
      lsp-ui
      company-lsp
-     ccls
+     cquery
      ;;global-company-mode
      )
    ;; A list of packages that cannot be updated.
@@ -161,7 +163,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+                               :size 16
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -343,11 +345,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (dolist (e '(
-               ("y" . bison-mode)
-               ("l" . bison-mode))))
+  ;;(setq ccls-extra-init-params '(:clang (:extraArgs ["-isystem", "/usr/include"])))
+  ;;(add-hook 'c++-mode #'lsp)
+  ;;(add-hook 'c-mode #'lsp) 
   )
-
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables
