@@ -1,6 +1,5 @@
 # spacemacs-config
 
-
 ## Install
 
 ```bash
@@ -26,6 +25,9 @@ Then in order to create the .ensime file for your project, start sbt (in the ter
 ## C++ cquery
 [cquery emacs](https://github.com/cquery-project/cquery/wiki/Emacs)
 
+## Ruby enh-ruby-mode rbenv
+[Spacemacs Ruby](https://github.com/syl20bnr/spacemacs/tree/develop/layers/+lang/ruby)
+
 ## Add major mode
 
-Scala java c-c++
+Scala java c-c++ ruby
