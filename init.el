@@ -43,7 +43,7 @@ values."
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-backend 'lsp-cquery
             c-c++-lsp-sem-highlight-rainbow t
-            c-c++-enable-clang-format-on-save t
+            ;;c-c++-enable-clang-format-on-save t
             c-c++-enable-auto-newline t)
      semantic
      helm
@@ -68,7 +68,7 @@ values."
      syntax-checking
      version-control
      scala
-     java
+     (java :variables java-backend 'lsp)
      smex
      )
    ;; List of additional packages that will be installed without being
@@ -77,9 +77,12 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
    '(
-     bison-mode
+     ;;bison-mode
      lsp-mode
      lsp-ui
+     ;; lsp-java need dap-mode treemacs
+     dap-mode
+     treemacs
      company-lsp
      cquery
      ;;global-company-mode
