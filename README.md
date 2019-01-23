@@ -28,6 +28,10 @@ Then in order to create the .ensime file for your project, start sbt (in the ter
 ## Ruby enh-ruby-mode rbenv
 [Spacemacs Ruby](https://github.com/syl20bnr/spacemacs/tree/develop/layers/+lang/ruby)
 
+## Python anaconda
+[Spacemacs Python](https://github.com/syl20bnr/spacemacs/tree/develop/layers/+lang/python)
+
 ## Add major mode
 
-Scala java c-c++ ruby
+Scala java c-c++ ruby rust python
+
